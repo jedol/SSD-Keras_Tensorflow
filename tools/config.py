@@ -5,7 +5,7 @@ from utils.mics import load_json
 
 
 #*************************************************************************************#
-## select one dataset for training
+## select one dataset used for training
 dataset_name = 'VOC07'
 # dataset_name = 'VOC07+12'
 #*************************************************************************************#
@@ -31,10 +31,6 @@ num_object_classes = 20
 background_label_id = 0
 batch_size = 32
 base_lr = 0.001
-
-# steps_per_epoch = 100
-# epochs = 2
-# lr_decay_epochs = [1,]
 
 steps_per_epoch = 10000
 epochs = 12

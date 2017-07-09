@@ -19,13 +19,13 @@ num_gpus = 2
 dataset_name = 'VOC07'
 
 ## type of trained model
-model_name = 'VGG16'
-# model_name = 'ResNet50'
+# model_name = 'VGG16'
+model_name = 'ResNet50'
 
 ## path to trained weights
-trained_weights_path = os.path.join(EXP_PATH, 'SSD300_VGG16_VOC07', 'final.h5')
-# trained_weights_path = os.path.join(EXP_PATH, 'SSD300_VGG16_VOC07+12', 'final.h5')
-# trained_weights_path = os.path.join(EXP_PATH, 'SSD300_ResNet50_VOC07+12', 'final.h5')
+# trained_weights_path = os.path.join(EXP_PATH, 'SSD300_VGG16_VOC07', 'final.h5') # 0.685
+# trained_weights_path = os.path.join(EXP_PATH, 'SSD300_VGG16_VOC07+12', 'final.h5') # 0.773
+trained_weights_path = os.path.join(EXP_PATH, 'SSD300_ResNet50_VOC07+12', 'final.h5') # 0.756
 
 ## model arguments
 image_size = (300,300)

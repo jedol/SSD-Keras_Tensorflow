@@ -15,9 +15,9 @@ The author's implementation of SSD is based on Caffe and it is hard to study bec
 ## Results
 | Input size | Base model | Train data | Test data | mAP |
 |:-:|:-:|:-:|:-:|:-:|
-|[300x300](https://drive.google.com/open?id=0B5wneErwoLwLelFTOEZTV3ZoSzg) | VGG16 | VOC07 | VOC07 | 0.685 |
-|[300x300](https://drive.google.com/open?id=0B5wneErwoLwLQlc4eDcxd010SUU) | VGG16 | VOC07+12 | VOC07 | 0.773 |
-|[300x300](https://drive.google.com/open?id=0B5wneErwoLwLdGpZbmdsaTFYSEk) | ResNet50 | VOC07+12 | VOC07 | 0.756 |
+|[300x300](https://drive.google.com/file/d/0B5wneErwoLwLelFTOEZTV3ZoSzg/view?usp=sharing&resourcekey=0-OToLkFlH-CDX7ZmTIev2gg) | VGG16 | VOC07 | VOC07 | 0.685 |
+|[300x300](https://drive.google.com/file/d/0B5wneErwoLwLQlc4eDcxd010SUU/view?usp=sharing&resourcekey=0-92nSboWF_5j61Vu-L_Eu6Q) | VGG16 | VOC07+12 | VOC07 | 0.773 |
+|[300x300](https://drive.google.com/file/d/0B5wneErwoLwLdGpZbmdsaTFYSEk/view?usp=sharing&resourcekey=0-RVFbJhzeXRXl4sjKDrbo5g) | ResNet50 | VOC07+12 | VOC07 | 0.756 |
 
 Click the **input size** to download the trained model.
 
@@ -69,8 +69,8 @@ image_size = (300,300)
 
 ## Training
 1. To train a new SSD model, finetuning the existing model trained on ImageNet.
-* [VGG16_fc_reduced](https://drive.google.com/open?id=0B5wneErwoLwLbW5lTUI0cWhQRWs): keras converted version of [caffe weights](https://gist.github.com/weiliu89/2ed6e13bfd5b57cf81d6)
-* [ResNet50](https://drive.google.com/open?id=0B5wneErwoLwLZG9acnFPQjRySGM): zero bias removed version of [keras weights](https://github.com/fchollet/deep-learning-models/releases)
+* [VGG16_fc_reduced](https://drive.google.com/file/d/0B5wneErwoLwLbW5lTUI0cWhQRWs/view?usp=sharing&resourcekey=0-Q6QhdxRb3H3NvRo2UUIx_Q): keras converted version of [caffe weights](https://gist.github.com/weiliu89/2ed6e13bfd5b57cf81d6)
+* [ResNet50](https://drive.google.com/file/d/0B5wneErwoLwLZG9acnFPQjRySGM/view?usp=sharing&resourcekey=0-ns8L7gpYQqOKO1voDszr0A): zero bias removed version of [keras weights](https://github.com/fchollet/deep-learning-models/releases)
 
 2. `tools/config.py` contains all the parameters used to train SSD. In general, you only need to edit the frequently modified parameters at the top of the script.
 ```python
